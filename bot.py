@@ -106,8 +106,9 @@ async def dump_all_messages(channel):
                     print('!!!!!!!!!!!!!!!!!!!!!!!!!')
                     print(msg)
                     print('!!!!!!!!!!!!!!!!!!!!!!!!!')
+                    print('tttttttttttttt')
                     symbol = msg.split('#')[2].split['\n'][0]
-
+                    print('tttttttttttttt')
                     amount_precision = int(exchange[symbol]['pricePrecision'])
 
                     now_price = round(float(convert_to_dict(client_bin.get_ticker())[symbol]['lastPrice']),
