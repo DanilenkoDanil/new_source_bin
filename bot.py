@@ -106,7 +106,7 @@ async def dump_all_messages(channel):
                     print('!!!!!!!!!!!!!!!!!!!!!!!!!')
                     print(msg)
                     print('!!!!!!!!!!!!!!!!!!!!!!!!!')
-                    symbol = msg.split(' ')[0].replace('/', '').replace('◾️', '').replace('#', '')
+                    symbol = msg.split('#')[2].split['\n'][0]
 
                     amount_precision = int(exchange[symbol]['pricePrecision'])
 
@@ -140,7 +140,7 @@ async def dump_all_messages(channel):
                         type_buy = 'SHORT'
 
                     res = f"""
-hahTRADE
+hahScalp
 
 hah{symbol} - hah{type_buy}
 
@@ -165,7 +165,7 @@ async def main():
     for index, dialog in enumerate(dialogs):
         if index < 250:
             print(dialog.name)
-            if 'million' in str(dialog.name):
+            if str(dialog.id) == '-1001297150391':
                 channel = dialog
                 print('+')
 
