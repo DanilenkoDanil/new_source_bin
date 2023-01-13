@@ -107,7 +107,7 @@ async def dump_all_messages(channel):
                     print(msg)
                     print('!!!!!!!!!!!!!!!!!!!!!!!!!')
                     print('tttttttttttttt')
-                    symbol = msg.split('#')[3].split('\n')[0]
+                    symbol = msg.split('#')[2].split(' ')[0]
                     print(symbol)
                     print('tttttttttttttt')
                     amount_precision = int(exchange[symbol]['pricePrecision'])
